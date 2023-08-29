@@ -52,10 +52,6 @@ strong {
     width: calc(33% - 20px);
 }
 
-.form-input:first-child {
-    width: calc(33% - 20px);
-}
-
 .checkbox-mailing {
     margin-top: 20px;
 }
@@ -116,11 +112,9 @@ button:hover {
 @media (max-width: 768px) {
     .flex {
         flex-direction: column;
-
     }
 
     .form-input {
-        width: 100% !important;
+        width: 100%;
     }
-
 }
