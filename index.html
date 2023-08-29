@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Granicus Front End Skills Assessment</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h2 class="personal-information">Personal Information</h2>
+      <form id="granicus-form">
+        <section class="inputs-container">
+          <div class="flex">
+            <div class="form-input">
+              <label for="first-name">First Name:<strong>*</strong></label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="required"
+              />
+            </div>
+            <div class="form-input">
+              <label for="middle-initial"
+                >Middle Initial:<strong>*</strong></label
+              >
+              <input
+                type="text"
+                id="middle-initial"
+                name="middle-initial"
+                class="required"
+              />
+            </div>
+            <div class="form-input">
+              <label for="last-name">Last name:<strong>*</strong></label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="required"
+              />
+            </div>
+          </div>
+          <div class="flex">
+            <div class="form-input">
+              <label for="address"
+                >Residential Street Address:<strong>*</strong></label
+              >
+              <input type="text" id="address" name="address" class="required" />
+            </div>
+            <div class="form-input">
+              <label for="address-2">Residential Street Address 2:</label>
+              <input type="text" id="address-2" name="address-2" />
+            </div>
+          </div>
+          <div class="flex">
+            <div class="form-input">
+              <label for="city">Residential City:<strong>*</strong></label>
+              <input type="text" id="city" name="city" class="required" />
+            </div>
+            <div class="form-input">
+              <label for="zip">Residential Zip:<strong>*</strong></label>
+              <input type="text" id="zip" name="zip" class="required" />
+            </div>
+          </div>
+          <div class="form-input checkbox-mailing">
+            <p>Is your Mailing Address the same as your Residential Address?</p>
+            <div>
+              <input type="checkbox" id="same-address" name="same-address" />
+              <label for="same-address">Yes</label>
+            </div>
+          </div>
+          <section class="mailing-address-form">
+            <div class="flex">
+              <div class="form-input">
+                <label for="mailing-address"
+                  >Mailing Street Address:<strong>*</strong></label
+                >
+                <input
+                  type="text"
+                  id="mailing-address"
+                  name="mailing-address"
+                  class="required"
+                />
+              </div>
+              <div class="form-input">
+                <label for="mailing-address-2">Mailing Street Address 2:</label>
+                <input
+                  type="text"
+                  id="mailing-address-2"
+                  name="mailing-address-2"
+                />
+              </div>
+            </div>
+            <div class="flex">
+              <div class="form-input">
+                <label for="mailing-city"
+                  >Mailing City:<strong>*</strong></label
+                >
+                <input
+                  type="text"
+                  id="mailing-city"
+                  name="mailing-city"
+                  class="required"
+                />
+              </div>
+              <div class="form-input">
+                <label for="mailing-zip">Mailing Zip:<strong>*</strong></label>
+                <input
+                  type="text"
+                  id="mailing-zip"
+                  name="mailing-zip"
+                  class="required"
+                />
+              </div>
+            </div>
+          </section>
+          <div class="flex">
+            <div class="form-input">
+              <label for="primary-phone"
+                >Primary Phone Number:<strong>*</strong></label
+              >
+              <input
+                type="text"
+                id="primary-phone"
+                name="primary-phone"
+                class="required"
+              />
+            </div>
+            <div class="form-input">
+              <label for="secondary-phone">Secondary Phone Number:</label>
+              <input type="text" id="secondary-phone" name="secondary-phone" />
+            </div>
+          </div>
+          <div class="flex">
+            <div class="form-input">
+              <label for="fax">Fax Number:</label>
+              <input type="text" id="fax" name="fax" />
+            </div>
+            <div class="form-input">
+              <label for="email">E-mail Address:<strong>*</strong></label>
+              <input type="text" id="email" name="email" class="required" />
+            </div>
+          </div>
+        </section>
+        <section class="acknowledgement">
+          <h2>Acknowledgement</h2>
+          <p>
+            Please read the following statement carefully before submitting your
+            application:
+          </p>
+          <p>
+            I certify that all statements that I have made on this application
+            and any other supplementary materials are true and correct. I hereby
+            authorize the city of temple to investigate the accuracy of this
+            information from any person or organization, and release the city of
+            temple and all persons and organizations from all claims and
+            liabilities arising from such investigation or the supplying of
+            information for such investigation. I acknowledge that any false
+            statement or misrepresentation on this application or supplementary
+            materials will be cause for refusal of appointment or immediate
+            dismissal at any time during the period of my appointment.
+          </p>
+        </section>
+        <div class="buttons-form">
+          <button type="submit" id="submit">Submit</button>
+          <button type="button" id="cancel">Cancel</button>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
